@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8"/>
+    <title>První webová stránka</title>
+    <script type="text/javascript">
+      function ahoj (co){
+        document.write("Ahoj světe " + co);
+        co++;
+        return co;
+      };
+    </script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      let a="6";
+      let b=2;
+      document.write("Ahoj světe");
+      document.write("<br/>");
+      /*
+      document.write("Výsledek je " + (a+b))
+      document.write("<br/>");
+
+      let d= new Date();
+      document.write("Dnes je: " + d.getDate() + ". " + (d.getMonth() + 1) + ". " + d.getFullYear());
+      document.write("<br />");
+      document.write("Čas je: " + d.getHours() + ":" + (d.getMinutes()));
+      document.write("<br/>");
+
+      let c = 'text';
+      let test = isNaN(c);
+      document.write(test + " " + c + "<br/>");
+      //let cas = prompt("Zadej čas");
+      if (d.getDate() < 12){
+        document.write("Je dopoledne.")
+        document.write("<br/>");
+      }
+      else
+      {
+        document.write("Je odpoledne.")
+        document.write("<br/>");
+      }
+      let e = 10;
+      e = ahoj(e);
+      document.write("<br/>");
+      document.write("Parametr je " + e);
+      document.write("<br/>");
+      let f = ahoj;
+      let t = f(e);
+      document.write("<br/>");
+
+      document.write(t);
+      */
+
+      let promenna_s_funkci = function(jmeno) {
+        document.write("Ahoj, vřele tě tu vítám " + jmeno + "!");
+      }
+
+      function zavolej_funkci(funkce, jmeno) {
+              document.write("Jsem funkce a volám funkci, která mi přišla do parametru v proměnné.<br />");
+              document.write("Jako parametr jí dám jmeno, které mi přišlo jako 2. parametr.<br />");
+              funkce(jmeno);
+      }
+
+      zavolej_funkci(promenna_s_funkci, "Karle");
+
+    </script>
+
+  </body>
+
